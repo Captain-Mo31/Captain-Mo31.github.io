@@ -7,8 +7,61 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 <body>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              GitHub
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Meine Projekte 
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                    ☁️Wlke
+                   
+                </a>
+                <a class="navbar-item">
+                    👨🏻‍🏫Eduteam 
+                </a>
+                <a class="navbar-item">
+                  Diese Seite 
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Weitere Projekte auf Github 
+                </a>
+              </div>
+            </div>
+          </div>
+      
+      </nav>
     <section class="section">
         {{content}}
     </section>
+    <footer class=" p-1 has-background-info is-full-size" style="position: fixed; left: 0; bottom: 0; padding-right: 2; width: 100%;">
+        <div class="has-text-white content has-text-centered">
+            <p>Seite von <strong>Captain Mo</strong></p>
+        </div>
+    </footer>
 </body>
 </html>
